@@ -28,9 +28,12 @@ namespace mymovieapp.Controllers
         {
             if (ModelState.IsValid)
             {
-                return RedirectToAction(nameof(Index));
+                ViewData["Message"] = "El cliente se ha registrado";
+                if(cliente.Nombre.Equals("Juan") && cliente.Apellido.Equals("Perez") ){
+                    ViewData["Message"] = "El cliente Juan ud tiene un saldo de 5000";
+                }
+                return View("Index");
             }
-            ViewData["Message"] = "El cliente se ha registrado";
             return View("Index");
         }
 

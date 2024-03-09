@@ -2,9 +2,8 @@
 @{
     ViewData["Title"] = "Cliente";
 }
-<h1>@ViewData["Title"]</h1>
 <div class="container">
-    <h1 class="text-center mb-4">Cliente</h1>
+    <h1 class="text-center mb-4">@ViewData["Title"]</h1>
     <div class="row justify-content-center">
         <div class="col-md-6">
             <form asp-controller="Cliente" asp-action="Create" method="post">
