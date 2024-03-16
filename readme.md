@@ -2,4 +2,6 @@
 
 Esta es una aplicacion para peliculas de cine
 
-Nueva linea
+esta es una linea nueva sobre la anterior
+
+tambien agrego lineas nuevas
